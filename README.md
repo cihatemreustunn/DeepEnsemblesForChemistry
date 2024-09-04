@@ -1,17 +1,18 @@
 # Deep Ensemble for ODE Integration
 
-This project implements a Deep Ensemble model for integrating Ordinary Differential Equations (ODEs). It uses a damped harmonic oscillator as an example ODE system.
+This project implements a Deep Ensemble model for integrating Ordinary Differential Equations (ODEs).
 
 ## Project Structure
 
 The project is organized as follows:
 
-- `src/`: Contains the source code
-  - `data/`: Data preprocessing and generation
-  - `models/`: Model definitions
-  - `training/`: Model training scripts
-  - `evaluation/`: Model evaluation scripts
-  - `visualization/`: Plotting and visualization tools
+
+- `data_preprocessing.py`: Data preprocessing and generation
+- `base_model.py`: Model definitions
+- `deep_ensemble.py`: Model definitions
+- `train.py`: Model training script
+- `evaluate.py`: Model evaluation script
+- `visualize.py`: Plotting and visualization tools
 - `main.py`: The main script to run the entire pipeline
 
 ## Setup and Running
@@ -32,7 +33,7 @@ This will train the Deep Ensemble, evaluate it on test data, and generate a plot
 
 To adapt this project for your specific ODE system:
 
-1. Modify the `generate_data` function in `src/data/data_preprocessing.py`.
-2. Adjust the model architecture in `src/models/base_model.py` if needed.
-3. Update the evaluation metrics in `src/evaluation/evaluate.py` as appropriate for your system.
+1. Modify the `generate_data` function in `data_preprocessing.py`.
+2. Adjust the model architecture in `base_model.py` if needed.
+3. Update the evaluation metrics in `evaluate.py` as appropriate for your system.
 
